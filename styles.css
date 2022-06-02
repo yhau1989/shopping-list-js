@@ -25,6 +25,16 @@
     width: 100%;
 }
 
+
+#items-form > button {
+    width: 137px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 9px;
+}
+
 input {
     padding: 5px;
     font-size: 16px;
@@ -32,10 +42,41 @@ input {
 
 .item-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5px;
+    font-size: 19px;
+    font-family: 'Circular-Loom';
+    border-bottom: 1px solid #c3c3c3;
+    padding: 19px;
 }
 
 .item-list > div:first-child {
     width: 80%;
+}
+
+.item-list > button {
+    width: 120px;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+#container_list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input {
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #c3c3c3;
+    padding: 11px;
+}
+
+label {
+    font-size: 18px;
+    font-family: 'Circular-Loom';
 }
