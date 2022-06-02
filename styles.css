@@ -1,0 +1,41 @@
+
+
+#container {
+    display: flex;
+    gap: 5px;
+}
+
+#container > div {
+    flex: 1;
+    padding: 5px;
+}
+
+
+
+#items-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#items-form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.item-list > div:first-child {
+    width: 80%;
+}

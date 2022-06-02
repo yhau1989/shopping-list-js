@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopping List</title>
+</head>
+<body>
+    <div id="container">
+        <div id="container_form">
+            <form id="items-form" name="items-form">
+
+                <div>
+                    <label for="item">Description item</label>
+                    <input id="item" name="item" type="text" required>
+                </div>
+                
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input id="quantity" name="quantity" type="number" required>
+                </div>
+                
+                <button type="submit">Add Item</button>
+            </form>
+        </div>
+        <div id="container_list">
+            <div class="item-list">
+                <div>item ddsdsdsdsd</div>
+                <div>cantidad</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
