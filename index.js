@@ -16,11 +16,21 @@ const itemList = (obj, index) => {
     elem.setAttribute('class', 'item-list');
     elem.innerHTML = `
     <div><strong>Item</strong>: ${obj.item}</div>
-    <div><strong>Cantidad</strong>: ${obj.quantity}</div>
-    <button onclick='eliminar(${index})'>Eliminar</button>`
+    <div><strong>Quantity</strong>: ${obj.quantity}</div>
+    <button onclick='eliminar(${index})'>Delete Item</button>`
     return elem;
 }
 
+
+const totals = () => 
+{
+    const sum = items.reduce((acc, index) =>  acc + parseInt(index.quantity), 0);
+    let elem = document.createElement('div');
+    elem.setAttribute('class', 'item-list');
+    elem.innerHTML = `<div><strong>Total Items</strong>: ${items.length}</div>
+    <div><strong>Total Quantity</strong>: ${sum}</div>`
+    return elem;
+}
 
 
 const writteList = (list) => {
@@ -29,6 +39,8 @@ const writteList = (list) => {
     list.forEach((x, index) => {
         list_content.appendChild(itemList(x, index))
     })
+    list_content.appendChild(totals());
+    
 }
 
 const eliminar = (position) => {
